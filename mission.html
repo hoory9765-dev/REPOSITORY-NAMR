@@ -6,31 +6,38 @@
     <title>The Mission | فريق العمل</title>
     <style>
         body {
-            background-color: #050505;
+            background-color: #0a0a0a; /* توحيد الخلفية مع الصفحة الرئيسية */
             color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Courier New', Courier, monospace; /* توحيد الخط لطابع الهاكرز */
             margin: 0;
             padding: 20px;
             text-align: center;
         }
 
         .header h1 {
-            color: #ff0055; /* لون نيون مختلف (وردي/أحمر) لتمييز المهمة */
+            color: #00f3ff; /* تغيير الوردي إلى السماوي النيون */
             font-size: 2.5rem;
             margin-top: 50px;
-            text-shadow: 0 0 10px rgba(255, 0, 85, 0.5);
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5); /* توحيد التوهج */
+            letter-spacing: 2px;
         }
 
         .mission-box {
             max-width: 800px;
             margin: 40px auto;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px dashed #ff0055;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #00f3ff; /* توحيد لون الإطار */
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.2); /* إضافة نفس توهج الصندوق بالرئيسية */
         }
 
-        /* جدول الفريق الفخم */
+        .mission-box h3 {
+            color: #00f3ff;
+            margin-top: 0;
+        }
+
+        /* جدول الفريق */
         table {
             width: 100%;
             margin-top: 30px;
@@ -44,15 +51,17 @@
         }
 
         th {
-            color: #ff0055;
+            color: #00f3ff; /* السماوي بدل الوردي */
             text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            letter-spacing: 1px;
         }
 
         .status-online {
-            color: #00ff00;
+            color: #00ff00; /* نبقي هذا أخضر لأنه يدل على حالة النشاط بشكل منطقي */
             font-weight: bold;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
         }
 
         /* أزرار الرجوع */
@@ -61,17 +70,21 @@
         }
 
         .btn-home {
+            display: inline-block;
+            background: transparent;
             color: #00f3ff;
             text-decoration: none;
             border: 1px solid #00f3ff;
             padding: 10px 25px;
             border-radius: 5px;
             transition: 0.3s;
+            font-weight: bold;
         }
 
         .btn-home:hover {
             background: #00f3ff;
-            color: #000;
+            color: #0a0a0a;
+            box-shadow: 0 0 15px #00f3ff;
         }
     </style>
 </head>
@@ -96,7 +109,8 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Hawraa Qasim</td> <td>Lead Developer</td>
+                    <td>Hawraa Qasim</td> 
+                    <td>Lead Developer</td>
                     <td class="status-online">Active</td>
                 </tr>
                 <tr>
@@ -122,6 +136,5 @@
         <a href="index.html" class="btn-home">العودة للبداية</a>
     </div>
 
-    
 </body>
 </html>
