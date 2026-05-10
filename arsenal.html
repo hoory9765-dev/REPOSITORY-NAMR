@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arsenal | مهارات الاختراق الأخلاقي</title>
+    <style>
+        /* ستايل الصفحة بالكامل */
+        body {
+            background-color: #050505; /* أسود ملكي */
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* عنوان الصفحة */
+        .header h1 {
+            color: #00f3ff; /* لون نيون */
+            font-size: 2.5rem;
+            margin-top: 50px;
+            letter-spacing: 3px;
+        }
+
+        /* حاوية البطاقات (Grid) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* ستايل البطاقة الواحدة */
+        .card {
+            background: rgba(255, 255, 255, 0.05); /* تصميم زجاجي شفاف */
+            border: 1px solid rgba(0, 243, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            transition: 0.4s; /* سرعة الحركة عند مرور الماوس */
+        }
+
+        /* حركة البطاقة لما يجي عليها الماوس */
+        .card:hover {
+            transform: translateY(-10px); /* ترتفع للأعلى */
+            border-color: #00f3ff;
+            box-shadow: 0 10px 25px rgba(0, 243, 255, 0.2);
+        }
+
+        .card h3 {
+            color: #00f3ff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #ccc;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* أزرار التنقل */
+        .btn-next {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 35px;
+            background-color: #00f3ff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn-next:hover {
+            box-shadow: 0 0 20px #00f3ff;
+        }
+
+        .btn-back {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>THE ARSENAL</h1>
+        <p>مختبر أدوات الحماية الرقمية</p>
+    </div>
+
+    <div class="grid-container">
+        <div class="card">
+            <h3>Network Scanning</h3>
+            <p>تحليل الشبكات واكتشاف الثغرات الأمنية لضمان حماية الأنظمة من المتسللين.</p>
+        </div>
+
+        <div class="card">
+            <h3>Encryption</h3>
+            <p>تأمين البيانات الحساسة باستخدام أقوى خوارزميات التشفير العالمية.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Security</h3>
+            <p>حماية المواقع الإلكترونية من الهجمات وضمان تجربة مستخدم آمنة وفخمة.</p>
+        </div>
+    </div>
+
+    <a href="mission.html" class="btn-next">الذهاب للمهمة الأخيرة</a>
+    <a href="index.html" class="btn-back">العودة للشاشة الرئيسية</a>
+
+</body>
+</html>
